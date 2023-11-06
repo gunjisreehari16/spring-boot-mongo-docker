@@ -17,9 +17,9 @@
 		<java.version>1.8</java.version>
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
-                <sonar.host.url>http://35.174.4.33:9000/</sonar.host.url>
+                <sonar.host.url>http://3.110.103.26:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin123</sonar.password> 
+		<sonar.password>camp@1122</sonar.password> 
 		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
 	</properties>
 
@@ -32,6 +32,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+                       
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -88,17 +89,17 @@
 	</dependencies>
 <distributionManagement>
 	
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://44.211.61.211:8081/repository/Hari-release/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://44.211.61.211:8081/repository/Hari-snapshot/</url>
-	    </snapshotRepository>
+	    	<repository>
+		<id>nexus</id>
+		<name>RAGHU Releases Nexus Repo</name>
+		<url>http://3.110.103.26:8081/repository/hari-Release/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>RAGHU IT Snapshots Nexus Repo</name>
+		<url>http://3.110.103.26:8081/repository/hari-snapshot/</url>
+	</snapshotRepository>	
 	    
 	</distributionManagement>
 	<build>
